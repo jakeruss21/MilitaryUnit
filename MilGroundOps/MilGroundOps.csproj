@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbramsTank.cs" />
     <Compile Include="Grenadier.cs" />
+    <Compile Include="HUMMVEE.cs" />
+    <Compile Include="M113APC.cs" />
+    <Compile Include="MRAP.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="PlatoonLeader.cs" />
     <Compile Include="Program.cs" />
