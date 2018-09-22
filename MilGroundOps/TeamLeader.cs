@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Program
+    class TeamLeader : Soldier
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }

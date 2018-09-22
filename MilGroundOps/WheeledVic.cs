@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Program
+    class WheeledVic : Vehicle
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
