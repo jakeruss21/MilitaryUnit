@@ -44,13 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Grenadier.cs" />
+    <Compile Include="Personnel.cs" />
+    <Compile Include="PlatoonLeader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rifleman.cs" />
     <Compile Include="Soldier.cs" />
+    <Compile Include="Leader.cs" />
     <Compile Include="TeamLeader.cs" />
     <Compile Include="TrackVic.cs" />
     <Compile Include="Vehicle.cs" />
+    <Compile Include="VicDriver.cs" />
     <Compile Include="WeaponCache.cs" />
     <Compile Include="WheeledVic.cs" />
   </ItemGroup>

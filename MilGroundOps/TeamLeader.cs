@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class TeamLeader : Soldier
+    class TeamLeader : Leader
     {
 
     }
