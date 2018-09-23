@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class SAW : DirectFire
+    class XM256_120mm : IndirectFire
     {
 
     }

@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Vehicle
+    class Commander : Leader
     {
-
-        // Speed
-        // Personnel reqs
-        // Weapons
-        // Armor
-        // 
 
     }
 }

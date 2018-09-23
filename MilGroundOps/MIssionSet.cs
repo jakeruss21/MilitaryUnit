@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Vehicle
+    class MissionSet
     {
 
-        // Speed
-        // Personnel reqs
-        // Weapons
-        // Armor
-        // 
+        // Personnel Requirements - Leadership etc.
+        // Vehicle Requirements
 
     }
 }

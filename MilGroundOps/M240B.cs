@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Vehicle
+    class M240B : DirectFire
     {
-
-        // Speed
-        // Personnel reqs
-        // Weapons
-        // Armor
-        // 
 
     }
 }

@@ -9,5 +9,11 @@ namespace MilGroundOps
     class Personnel
     {
 
+        // Weapon
+        // Speech
+        // Roster # (Two Char, 4 digit int)
+        // Rank
+        // Name (Last, First)
+        
     }
 }
