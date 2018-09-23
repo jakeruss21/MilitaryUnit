@@ -9,5 +9,15 @@ namespace MilGroundOps
     class TrackVic : Vehicle
     {
 
+        // INHERITED - not changed
+            // 
+
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+
     }
 }

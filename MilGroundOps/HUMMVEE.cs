@@ -9,5 +9,16 @@ namespace MilGroundOps
     class HUMMVEE : WheeledVic
     {
 
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+            // Number Wheels
+
+        // UNIQUE
+            // 
+
     }
 }

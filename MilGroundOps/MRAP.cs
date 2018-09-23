@@ -9,5 +9,16 @@ namespace MilGroundOps
     class MRAP : WheeledVic
     {
 
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+            // Number Wheels
+
+        // UNIQUE
+            // Passangers
+
     }
 }

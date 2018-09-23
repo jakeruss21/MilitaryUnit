@@ -9,7 +9,7 @@ namespace MilGroundOps
     class WeaponCache
     {
 
-        // Ammunition
+        // Ammunition Type
         // Reload
         // Mission load
         // Rate of Fire

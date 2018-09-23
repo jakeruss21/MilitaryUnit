@@ -8,6 +8,18 @@ namespace MilGroundOps
 {
     class WheeledVic : Vehicle
     {
+        // INHERITED - not changed
+            // 
+
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+
+        // Unique to Class
+            // Number Wheels
 
     }
 }

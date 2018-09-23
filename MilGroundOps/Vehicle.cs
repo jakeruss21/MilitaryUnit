@@ -13,7 +13,7 @@ namespace MilGroundOps
         // Personnel reqs
         // Weapons
         // Armor
-        // 
+        // Mobility
 
     }
 }

@@ -9,5 +9,15 @@ namespace MilGroundOps
     class AbramsTank : TrackVic
     {
 
+        // INHERITED - not changed
+            // 
+
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+
     }
 }

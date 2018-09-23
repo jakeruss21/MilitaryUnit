@@ -9,5 +9,18 @@ namespace MilGroundOps
     class M113APC : TrackVic
     {
 
+        // INHERITED - not changed
+            // 
+
+        // INHERITED - Changed
+            // Speed
+            // Personnel reqs
+            // Weapons
+            // Armor
+            // Mobility
+
+        // UNIQUE
+            // Passangers
+
     }
 }
