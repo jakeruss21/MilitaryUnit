@@ -9,16 +9,19 @@ namespace MilGroundOps
     class MRAP : WheeledVic
     {
 
-        // INHERITED - Changed
-            // Speed
-            // Personnel reqs
-            // Weapons
-            // Armor
-            // Mobility
-            // Number Wheels
+        // INHERITED - not changed
+        // 
 
-        // UNIQUE
-            // Passangers
+        // INHERITED - Changed
+            // Speed - 65 MPH
+            // Personnel reqs - Min 3 (Driver, TeamLeader, Gunner)
+            // Weapons - 1x240B
+            // Armor - light/medium
+            // Mobility - medium, not All Terrain
+            // Number Wheels - 4
+
+        // Unique to Class
+         // Number Wheels - 4
 
     }
 }

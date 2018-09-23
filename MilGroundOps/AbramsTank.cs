@@ -13,11 +13,11 @@ namespace MilGroundOps
             // 
 
         // INHERITED - Changed
-            // Speed
-            // Personnel reqs
-            // Weapons
-            // Armor
-            // Mobility
+            // Speed - 45
+            // Personnel reqs - 4 (Driver, TeamLeader, Gunner, Loader(Gunner2))
+            // Weapons - 1x240B, XM256_120MM
+            // Armor - Medium
+            // Mobility - High
 
     }
 }

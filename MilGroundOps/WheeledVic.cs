@@ -12,14 +12,14 @@ namespace MilGroundOps
             // 
 
         // INHERITED - Changed
-            // Speed
-            // Personnel reqs
-            // Weapons
-            // Armor
-            // Mobility
+            // Speed - 50 MPH
+            // Personnel reqs - Min 2 (Driver and TeamLeader
+            // Weapons - No extras
+            // Armor - light
+            // Mobility - medium, not All Terrain
 
         // Unique to Class
-            // Number Wheels
+            // Number Wheels - 4
 
     }
 }
