@@ -8,6 +8,13 @@ namespace MilGroundOps
 {
     class DirectFire : WeaponCache
     {
+        //Inherited
+            // Ammunition Type
+            // Reload
+            // Mission load
+            // Rate of Fire
+            // Range
+            // Magazine
 
     }
 }

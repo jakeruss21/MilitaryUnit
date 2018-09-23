@@ -9,5 +9,16 @@ namespace MilGroundOps
     class IndirectFire : WeaponCache
     {
 
+        // Inherited
+            // Ammunition Type
+            // Reload
+            // Mission load
+            // Rate of Fire
+            // Range
+            // Magazine
+
+        //Unique
+            // Area of effect
+
     }
 }
