@@ -9,5 +9,13 @@ namespace MilGroundOps
     class PlatoonLeader : Leader
     {
 
+        //Inherited - Not changed
+            // Name - Randomly Assigned
+            // Roster # - Randomly Assigned
+            // Weapon - M9
+
+        //Inherited - Changed
+            // Rank - 1LT
+
     }
 }

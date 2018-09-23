@@ -55,6 +55,7 @@
     <Compile Include="M203.cs" />
     <Compile Include="M4Carbine.cs" />
     <Compile Include="M9Pistol.cs" />
+    <Compile Include="MaDeuce.cs" />
     <Compile Include="MissionSet.cs" />
     <Compile Include="MRAP.cs" />
     <Compile Include="Personnel.cs" />
@@ -68,7 +69,7 @@
     <Compile Include="TeamLeader.cs" />
     <Compile Include="TrackVic.cs" />
     <Compile Include="Vehicle.cs" />
-    <Compile Include="VicDriver.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="WeaponCache.cs" />
     <Compile Include="WheeledVic.cs" />
     <Compile Include="XM256_120mm.cs" />

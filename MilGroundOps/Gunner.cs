@@ -9,5 +9,14 @@ namespace MilGroundOps
     class Gunner : Soldier
     {
 
+        // Inherited - Not Changed
+            // Name (Last, First)
+            // Roster # (Two Char, 4 digit int)
+            // Rank - Private
+        
+        // Inherited - Changed
+            // Weapon - None
+            // Speech - Pew pew die die!
+
     }
 }

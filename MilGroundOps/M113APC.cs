@@ -13,14 +13,14 @@ namespace MilGroundOps
             // 
 
         // INHERITED - Changed
-            // Speed
-            // Personnel reqs
-            // Weapons
-            // Armor
-            // Mobility
+            // Speed 42 mph
+            // Personnel reqs - 3 (Driver, TeamLeader, Gunner)
+            // Weapons - 1xMaDeuce
+            // Armor - medium
+            // Mobility - medium
 
         // UNIQUE
-            // Passangers
+            // Passangers - 6
 
     }
 }

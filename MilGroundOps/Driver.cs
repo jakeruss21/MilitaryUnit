@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace MilGroundOps
 {
-    class Soldier : Personnel
+    class Driver : Soldier
     {
 
         // Inherited - Not Changed
             // Name (Last, First)
             // Roster # (Two Char, 4 digit int)
+            // Weapon - M4
 
         // Inherited - Changed
-            // Weapon - M4
-            // Speech - For Atropia!
+            // Speech - I have a need, a need for speed!
             // Rank - Specialist
 
     }
