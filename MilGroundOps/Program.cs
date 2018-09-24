@@ -11,6 +11,8 @@ namespace MilGroundOps
         static void Main(string[] args)
         {
 
+            AbramsTank daddyTank = new AbramsTank();
+
         }
     }
 }

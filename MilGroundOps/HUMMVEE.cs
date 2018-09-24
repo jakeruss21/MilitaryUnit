@@ -9,19 +9,15 @@ namespace MilGroundOps
     class HUMMVEE : WheeledVic
     {
 
-        // INHERITED - not changed
-        // 
-
-        // INHERITED - Changed
-            // Speed - 55 MPH
-            // Personnel reqs - Min 2 (Driver TeamLeader, Gunner)
-            // Weapons - 1x240B
-            // Armor - light
-            // Mobility - medium, not All Terrain
-            // Number Wheels - 4
-
-        // Unique to Class
-        
+        public HUMMVEE()
+        {
+            this.vicSpeed = 55;
+            this.personnelReqs = 3;
+            this.weaponSystem = "M240B";
+            this.armorType = "light";
+            this.mobility = "limited";
+            this.wheels = 4;
+        }
 
     }
 }

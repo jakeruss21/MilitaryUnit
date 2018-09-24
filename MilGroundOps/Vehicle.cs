@@ -8,6 +8,11 @@ namespace MilGroundOps
 {
     class Vehicle
     {
+        public int vicSpeed;
+        public int personnelReqs;
+        public string weaponSystem;
+        public string armorType;
+        public string mobility;
 
         virtual public void VehicleSpeed()// Speed
         {

@@ -8,18 +8,16 @@ namespace MilGroundOps
 {
     class WheeledVic : Vehicle
     {
-        // INHERITED - not changed
-            // 
+        public int wheels = 4;
 
-        // INHERITED - Changed
-            // Speed - 50 MPH
-            // Personnel reqs - Min 2 (Driver and TeamLeader
-            // Weapons - No extras
-            // Armor - light
-            // Mobility - medium, not All Terrain
-
-        // Unique to Class
-            // Number Wheels - 4
+        public WheeledVic()
+        {
+            this.vicSpeed = 50;
+            this.personnelReqs = 3;
+            this.weaponSystem = "M240B";
+            this.armorType = "light";
+            this.mobility = "limited";
+        }
 
     }
 }

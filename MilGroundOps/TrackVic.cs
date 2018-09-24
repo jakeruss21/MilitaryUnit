@@ -8,16 +8,14 @@ namespace MilGroundOps
 {
     class TrackVic : Vehicle
     {
-
-        // INHERITED - not changed
-            // 
-
-        // INHERITED - Changed
-            // Speed - 45
-            // Personnel reqs - 2 (Driver, TeamLeader)
-            // Weapons - 1x240B
-            // Armor - Medium
-            // Mobility - High
+        public TrackVic()
+        {
+            this.vicSpeed = 45;
+            this.personnelReqs = 3;
+            this.weaponSystem = "M240B";
+            this.armorType = "medium";
+            this.mobility = "All-terrain";
+        }
 
     }
 }

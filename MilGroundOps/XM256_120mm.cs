@@ -13,9 +13,19 @@ namespace MilGroundOps
             Console.WriteLine("120mm high explosive round");
         }
 
+        public void FireWeapon()
+        {
+            Console.WriteLine("KABOOM!");
+        }
+
         override public void Reload()    // Reload
         {
-            Console.WriteLine("10 second reload time");
+            Console.WriteLine("10 second reload time...");
+            for (int i = 10; i >= 1; i--)
+            {
+                Console.Write($"i... ");
+                System.Threading.Thread.Sleep(1000);
+            }
         }
 
         override public void MissionLoadout() // Mission loadout
