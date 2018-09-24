@@ -8,7 +8,10 @@ namespace MilGroundOps
 {
     class PlatoonLeader : Leader
     {
+        public PlatoonLeader()
+        {
 
+        }
         //Inherited - Not changed
             // Name - Randomly Assigned
             // Roster # - Randomly Assigned

@@ -9,14 +9,19 @@ namespace MilGroundOps
     class MaDeuce : DirectFire
     {
 
+        override public void FireWeapon()
+        {
+            Console.WriteLine("Big pew pew pew!");
+        }
+
         override public void AmmunitionType()  // Ammunition Type
         {
             Console.WriteLine("50 caliber round");
         }
 
-        override public void Reload()    // Reload
+        override public void Reload(int time = 20)    // Reload
         {
-            Console.WriteLine("30 second reload time per magazine");
+            Console.WriteLine("20 second reload time per magazine");
         }
 
         override public void MissionLoadout() // Mission loadout

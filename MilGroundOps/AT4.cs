@@ -13,7 +13,7 @@ namespace MilGroundOps
             Console.WriteLine("Rocket propelled grenade");
         }
 
-        override public void Reload()    // Reload
+        override public void Reload(int time = 0)    // Reload
         {
             Console.WriteLine("This weapon is not reloaded");
         }

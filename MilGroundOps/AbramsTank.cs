@@ -9,26 +9,28 @@ namespace MilGroundOps
     class AbramsTank : TrackVic
     {
         XM256_120mm bigCannon = new XM256_120mm();
-        //PlatoonLeader tankCommander = new PlatoonLeader();
-        //TeamLeader bigSarge = new TeamLeader();
-        //Driver driver = new Driver();
-        //Gunner bigBoomer = new Gunner();
+        public Personnel[] tankCrew = new Personnel[4];
         
         public AbramsTank()
         {
             this.vicSpeed = 45;
-            this.personnelReqs = 4;
+            this.personnelReqs = tankCrew.Length;
             this.weaponSystem = "XM256 120mm cannon";
             this.armorType = "Heavy";
             this.mobility = "All Terrain";
+            this.tankCrew[0] = new PlatoonLeader();
+            this.tankCrew[1] = new TeamLeader();
+            this.tankCrew[2] = new Driver();
+            this.tankCrew[3] = new Gunner();
+
         }
 
-        /*override*/ public void StartEngine()
+        override public void StartEngine()
         {
             Console.WriteLine("VRUM!");
         }
 
-        /*override*/ public void FireWeapon()
+        override public void FireWeapon()
         {
             Random rand = new Random();
             bigCannon.FireWeapon();
@@ -42,6 +44,11 @@ namespace MilGroundOps
                 Console.WriteLine("Target missed, reloading...");
                 bigCannon.Reload();
             }
+        }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"This vehicle goes {vicSpeed} mph.");
         }
 
     }

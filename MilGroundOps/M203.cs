@@ -13,7 +13,7 @@ namespace MilGroundOps
             Console.WriteLine("40mm explosive round");
         }
 
-        override public void Reload()    // Reload
+        override public void Reload(int time = 10)    // Reload
         {
             Console.WriteLine("10 second reload time");
         }

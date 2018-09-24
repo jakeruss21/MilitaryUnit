@@ -17,6 +17,7 @@ namespace MilGroundOps
             this.weaponSystem = "M240B";
             this.armorType = "light";
             this.mobility = "limited";
+            this.wheels = 4;
         }
 
     }

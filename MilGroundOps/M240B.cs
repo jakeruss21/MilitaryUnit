@@ -8,15 +8,20 @@ namespace MilGroundOps
 {
     class M240B : DirectFire
     {
+        public void FireWeapon()
+        {
+            Console.WriteLine("Pew pew pew die die die!");
+        }
 
         override public void AmmunitionType()  // Ammunition Type
         {
             Console.WriteLine("7.62mm NATO round");
         }
 
-        override public void Reload()    // Reload
+        override public void Reload(int time = 10)    // Reload
         {
-            Console.WriteLine("15 second reload time per magazine");
+            Console.WriteLine("You expended 200 rounds, reloading takes 10 seconds");
+            base.Reload(time);
         }
 
         override public void MissionLoadout() // Mission loadout

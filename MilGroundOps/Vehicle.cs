@@ -8,36 +8,37 @@ namespace MilGroundOps
 {
     class Vehicle
     {
+
         public int vicSpeed;
         public int personnelReqs;
         public string weaponSystem;
         public string armorType;
         public string mobility;
 
-        virtual public void VehicleSpeed()// Speed
+        public Vehicle()
         {
-            Console.WriteLine("Top speed of 100 mph");
+            this.vicSpeed = 0;
+            this.personnelReqs = 0;
+            this.weaponSystem = "None";
+            this.armorType = "None";
+            this.mobility = "None";
         }
 
-        virtual public void VehiclePersonnelReqs() // Personnel reqs
+        virtual public void FireWeapon()
         {
-            Console.WriteLine("Requires 3 people to operate: Team Leader, Driver, and the Gunner");
+            Console.WriteLine("No weapons installed");
         }
 
-        virtual public void VehicleWeaponSystems() // Weapons
+        virtual public void StartEngine()
         {
-            Console.WriteLine("M240B weapon system mounted");
+            Console.WriteLine("Vroom!");
         }
 
-        virtual public void VehicleArmor() // Armor
+        virtual public void Drive()
         {
-            Console.WriteLine("Light armor");
+            Console.WriteLine("It takes you forever to get there, because there is no vehicle assigned");
         }
 
-        virtual public void VehicleMobility() // Mobility
-        {
-            Console.WriteLine("This vehicle has good mobility over most terrain");
-        }
 
     }
 }
