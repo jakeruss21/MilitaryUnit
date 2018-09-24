@@ -9,11 +9,30 @@ namespace MilGroundOps
     class Vehicle
     {
 
-        // Speed
-        // Personnel reqs
-        // Weapons
-        // Armor
-        // Mobility
+        virtual public void VehicleSpeed()// Speed
+        {
+            Console.WriteLine("Top speed of 100 mph");
+        }
+
+        virtual public void VehiclePersonnelReqs() // Personnel reqs
+        {
+            Console.WriteLine("Requires 3 people to operate: Team Leader, Driver, and the Gunner");
+        }
+
+        virtual public void VehicleWeaponSystems() // Weapons
+        {
+            Console.WriteLine("M240B weapon system mounted");
+        }
+
+        virtual public void VehicleArmor() // Armor
+        {
+            Console.WriteLine("Light armor");
+        }
+
+        virtual public void VehicleMobility() // Mobility
+        {
+            Console.WriteLine("This vehicle has good mobility over most terrain");
+        }
 
     }
 }

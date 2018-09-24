@@ -9,11 +9,30 @@ namespace MilGroundOps
     class Personnel
     {
 
-        // Weapon
-        // Speech
-        // Roster # (Two Char, 4 digit int)
-        // Rank
-        // Name (Last, First)
-        
+        virtual public void NameofPerson()  // Name (Last, First)
+        {
+            Console.WriteLine("Doe, John");
+        }
+
+        virtual public void RosterNumber()  // Roster # (Two Char, 4 digit int)
+        {
+            Console.WriteLine("JD1234");
+        }
+
+        virtual public void PersonSaying()  // Speech
+        {
+            Console.WriteLine("For Atropia!");
+        }
+
+        virtual public void PersonRank()    // Rank
+        {
+            Console.WriteLine("Captain");
+        }
+
+        virtual public void PersonWeapon()  // Weapon
+        {
+            Console.WriteLine("M9 weapon equipped");
+        }
+
     }
 }
