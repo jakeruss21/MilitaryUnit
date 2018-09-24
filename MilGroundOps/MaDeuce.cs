@@ -9,40 +9,30 @@ namespace MilGroundOps
     class MaDeuce : DirectFire
     {
 
+        public MaDeuce()
+        {
+            this.ammunitionType = 50;
+            this.reloadTime = 20;
+            this.missionLoadout = 2000;
+            this.fireRate = 850;
+            this.range = 1000;
+            this.magazine = 500;
+        }
+
         override public void FireWeapon()
         {
             Console.WriteLine("Big pew pew pew!");
-        }
+            Console.WriteLine($"This weapon has fire rate of {fireRate} rpm.");
+            Console.WriteLine($"This weapon has a range of {range} meters.");
+            Console.WriteLine($"The magazine holds {magazine} rounds.");
 
-        override public void AmmunitionType()  // Ammunition Type
-        {
-            Console.WriteLine("50 caliber round");
         }
 
         override public void Reload(int time = 20)    // Reload
         {
-            Console.WriteLine("20 second reload time per magazine");
+            missionLoadout -= magazine;
+            base.Reload(reloadTime);
         }
-
-        override public void MissionLoadout() // Mission loadout
-        {
-            Console.WriteLine("Basic mission loadout of 2000 rounds");
-        }
-
-        override public void FireRPM()   // Rate of Fire
-        {
-            Console.WriteLine("Firing rate of 850 rounds per minute");
-        }
-
-        override public void RangeofWeapon() // Range
-        {
-            Console.WriteLine("1000 meter effective range");
-        }
-
-        override public void MagazineSize()  // Magazine
-        {
-            Console.WriteLine("There are 500 rounds in each magazine");
-        }
-
+        
     }
 }

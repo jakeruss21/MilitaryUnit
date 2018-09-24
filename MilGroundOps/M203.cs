@@ -8,39 +8,30 @@ namespace MilGroundOps
 {
     class M203 : IndirectFire
     {
-        override public void AmmunitionType()  // Ammunition Type
+
+        public M203()
         {
-            Console.WriteLine("40mm explosive round");
+            this.ammunitionType = 40;
+            this.reloadTime = 10;
+            this.missionLoadout = 10;
+            this.fireRate = 6;
+            this.range = 400;
+            this.magazine = 1;
+            this.areaofAffect = 10;
+        }
+
+        override public void FireWeapon()
+        {
+            Console.WriteLine("Thunk!");
+            Console.WriteLine($"This weapon has fire rate of {fireRate} rpm.");
+            Console.WriteLine($"This weapon has a range of {range} meters.");
+            Console.WriteLine($"The area of affect for this weapon is {areaofAffect} meters.");
         }
 
         override public void Reload(int time = 10)    // Reload
         {
-            Console.WriteLine("10 second reload time");
-        }
-
-        override public void MissionLoadout() // Mission loadout
-        {
-            Console.WriteLine("Basic mission loadout of 10 rounds");
-        }
-
-        override public void FireRPM()   // Rate of Fire
-        {
-            Console.WriteLine("Firing rate of 6 rounds per minute");
-        }
-
-        override public void RangeofWeapon() // Range
-        {
-            Console.WriteLine("400 meter point effective range");
-        }
-
-        override public void MagazineSize()  // Magazine
-        {
-            Console.WriteLine("There is 1 round in each magazine");
-        }
-
-        override public void AreaofEffect()  // Area of effect
-        {
-            Console.WriteLine("Those within 10 meters of the target will also be affected by this weapon");
+            missionLoadout -= magazine;
+            base.Reload(reloadTime);
         }
 
     }

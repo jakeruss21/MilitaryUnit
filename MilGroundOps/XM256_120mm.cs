@@ -8,44 +8,30 @@ namespace MilGroundOps
 {
     class XM256_120mm : IndirectFire
     {
-        override public void AmmunitionType()  // Ammunition Type
+
+        public XM256_120mm()
         {
-            Console.WriteLine("120mm high explosive round");
+            this.ammunitionType = 120;
+            this.reloadTime = 10;
+            this.missionLoadout = 50;
+            this.fireRate = 6;
+            this.range = 3000;
+            this.magazine = 1;
+            this.areaofAffect = 20;
         }
 
         override public void FireWeapon()
         {
             Console.WriteLine("KABOOM!");
+            Console.WriteLine($"This weapon has fire rate of {fireRate} rpm.");
+            Console.WriteLine($"This weapon has a range of {range} meters.");
+            Console.WriteLine($"The area of affect for this weapon is {areaofAffect} meters.");
         }
 
         override public void Reload(int time = 10)    // Reload
         {
-            base.Reload(10);
-        }
-
-        override public void MissionLoadout() // Mission loadout
-        {
-            Console.WriteLine("Basic mission loadout of 50 rounds");
-        }
-
-        override public void FireRPM()   // Rate of Fire
-        {
-            Console.WriteLine("Firing rate of 6 rounds per minute");
-        }
-
-        override public void RangeofWeapon() // Range
-        {
-            Console.WriteLine("3000 meter effective range");
-        }
-
-        override public void MagazineSize()  // Magazine
-        {
-            Console.WriteLine("There is 1 round in each barrel");
-        }
-
-        override public void AreaofEffect()  // Area of effect
-        {
-            Console.WriteLine("Those within 20 meters of the target will also be affected by this weapon");
+            missionLoadout -= magazine;
+            base.Reload(reloadTime);
         }
 
     }

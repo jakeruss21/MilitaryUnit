@@ -44,13 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbramsTank.cs" />
-    <Compile Include="AT4.cs" />
     <Compile Include="Commander.cs" />
     <Compile Include="DirectFire.cs" />
     <Compile Include="Grenadier.cs" />
     <Compile Include="Gunner.cs" />
+    <Compile Include="HeavyOp.cs" />
     <Compile Include="HUMMVEE.cs" />
     <Compile Include="IndirectFire.cs" />
+    <Compile Include="LightOp.cs" />
     <Compile Include="M113APC.cs" />
     <Compile Include="M203.cs" />
     <Compile Include="M4Carbine.cs" />

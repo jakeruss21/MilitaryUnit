@@ -9,34 +9,28 @@ namespace MilGroundOps
     class M4Carbine : DirectFire
     {
 
-        override public void AmmunitionType()  // Ammunition Type
+        public M4Carbine()
         {
-            Console.WriteLine("5.56mm NATO round");
+            this.ammunitionType = 5.62;
+            this.reloadTime = 2;
+            this.missionLoadout = 210;
+            this.fireRate = 2;
+            this.range = 400;
+            this.magazine = 30;
+        }
+
+        override public void FireWeapon()
+        {
+            Console.WriteLine("Pew pew pew!");
+            Console.WriteLine($"This weapon has fire rate of {fireRate} rpm.");
+            Console.WriteLine($"This weapon has a range of {range} meters.");
+            Console.WriteLine($"The magazine holds {magazine} rounds.");
         }
 
         override public void Reload(int time = 2)    // Reload
         {
-            Console.WriteLine("2 second reload time");
-        }
-
-        override public void MissionLoadout() // Mission loadout
-        {
-            Console.WriteLine("Basic mission loadout of 210 rounds");
-        }
-
-        override public void FireRPM()   // Rate of Fire
-        {
-            Console.WriteLine("Firing rate of 200 rounds per minute");
-        }
-
-        override public void RangeofWeapon() // Range
-        {
-            Console.WriteLine("400 meter point effective range");
-        }
-
-        override public void MagazineSize()  // Magazine
-        {
-            Console.WriteLine("There are 30 rounds in each magazine");
+            missionLoadout -= magazine;
+            base.Reload(reloadTime);
         }
 
     }

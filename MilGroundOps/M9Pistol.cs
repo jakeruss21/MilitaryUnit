@@ -9,34 +9,28 @@ namespace MilGroundOps
     class M9Pistol : DirectFire
     {
 
-        override public void AmmunitionType()  // Ammunition Type
+        public M9Pistol()
         {
-            Console.WriteLine("9mm round");
+            this.ammunitionType = 9;
+            this.reloadTime = 2;
+            this.missionLoadout = 90;
+            this.fireRate = 100;
+            this.range = 50;
+            this.magazine = 15;
+        }
+
+        override public void FireWeapon()
+        {
+            Console.WriteLine("Tiny pew pew pew!");
+            Console.WriteLine($"This weapon has fire rate of {fireRate} rpm.");
+            Console.WriteLine($"This weapon has a range of {range} meters.");
+            Console.WriteLine($"The magazine holds {magazine} rounds.");
         }
 
         override public void Reload(int time = 2)    // Reload
         {
-            Console.WriteLine("2 second reload time per magazine");
-        }
-
-        override public void MissionLoadout() // Mission loadout
-        {
-            Console.WriteLine("Basic mission loadout of 90 rounds");
-        }
-
-        override public void FireRPM()   // Rate of Fire
-        {
-            Console.WriteLine("Firing rate of 100 rounds per minute");
-        }
-
-        override public void RangeofWeapon() // Range
-        {
-            Console.WriteLine("50 meter effective range");
-        }
-
-        override public void MagazineSize()  // Magazine
-        {
-            Console.WriteLine("There are 15 rounds in each magazine");
+            missionLoadout -= magazine;
+            base.Reload(reloadTime);
         }
 
     }

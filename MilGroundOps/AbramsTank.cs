@@ -32,6 +32,7 @@ namespace MilGroundOps
 
         override public void FireWeapon()
         {
+            Console.WriteLine(tankCrew[3].saying);
             Random rand = new Random();
             bigCannon.FireWeapon();
             int hit = rand.Next();
