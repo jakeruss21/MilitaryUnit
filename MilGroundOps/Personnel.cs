@@ -21,10 +21,9 @@ namespace MilGroundOps
             this.rank = "PVT";
         }
 
-        virtual public void PersonWeapon()  // Weapon
+        virtual public void FireWeapon()
         {
-            Console.WriteLine("M9 weapon equipped");
+            Console.WriteLine("You don't have a weapon to fire!");
         }
-
     }
 }

@@ -8,7 +8,7 @@ namespace MilGroundOps
 {
     class Gunner : Soldier
     {
-
+  
         public Gunner()
         {
             this.personName = "Yakko Warner";
@@ -16,8 +16,6 @@ namespace MilGroundOps
             this.saying = "Pew pew die suckers!";
             this.rank = "PVT";
         }
-
-        // Weapon - None
 
     }
 }

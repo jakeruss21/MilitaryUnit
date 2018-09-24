@@ -8,6 +8,7 @@ namespace MilGroundOps
 {
     class Driver : Soldier
     {
+        public M4Carbine carbine = new M4Carbine();
 
         public Driver()
         {
@@ -17,7 +18,11 @@ namespace MilGroundOps
             this.rank = "SPC";
         }
 
-        // Weapon - M4
+        public override void FireWeapon()
+        {
+            carbine.FireWeapon();
+            carbine.Reload();
+        }
 
     }
 }

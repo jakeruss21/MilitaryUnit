@@ -8,6 +8,7 @@ namespace MilGroundOps
 {
     class Rifleman : Soldier
     {
+        public M4Carbine carbine = new M4Carbine();
 
         public Rifleman()
         {
@@ -17,7 +18,11 @@ namespace MilGroundOps
             this.rank = "PVT";
         }
 
-        // Weapon - M4/AT4 - randomly assign (1/6 chance of carrying AT4)
+        public override void FireWeapon()
+        {
+            carbine.FireWeapon();
+            carbine.Reload();
+        }
 
     }
 }

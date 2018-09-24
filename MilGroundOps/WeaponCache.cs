@@ -14,7 +14,7 @@ namespace MilGroundOps
             Console.WriteLine("5.56mm NATO round");
         }
 
-        virtual public void Reload(int time)    // Reload
+        virtual public void Reload(int time = 0)    // Reload
         {
             Console.WriteLine("Reloading");
             for (int i = time; i >= 1; i--)

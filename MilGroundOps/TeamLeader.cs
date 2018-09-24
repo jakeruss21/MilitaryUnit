@@ -8,6 +8,7 @@ namespace MilGroundOps
 {
     class TeamLeader : Leader
     {
+        public M4Carbine carbine = new M4Carbine();
 
         public TeamLeader()
         {
@@ -17,7 +18,11 @@ namespace MilGroundOps
             this.rank = "SGT";
         }
 
-        // Weapon - M4
+        public override void FireWeapon()
+        {
+            carbine.FireWeapon();
+            carbine.Reload();
+        }
 
     }
 }

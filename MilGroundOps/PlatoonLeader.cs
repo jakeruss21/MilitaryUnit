@@ -8,6 +8,7 @@ namespace MilGroundOps
 {
     class PlatoonLeader : Leader
     {
+        public M9Pistol pistol = new M9Pistol();
 
         public PlatoonLeader()
         {
@@ -17,7 +18,11 @@ namespace MilGroundOps
             this.rank = "1LT";
         }
 
-        // Weapon - M9
+        public override void FireWeapon()
+        {
+            pistol.FireWeapon();
+            pistol.Reload();
+        }
 
     }
 }

@@ -14,6 +14,8 @@ namespace MilGroundOps
             AbramsTank daddyTank = new AbramsTank();
             daddyTank.FireWeapon();
 
+            daddyTank.tankCrew[3].FireWeapon();
+
         }
     }
 }

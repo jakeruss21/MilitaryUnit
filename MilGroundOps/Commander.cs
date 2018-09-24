@@ -8,15 +8,21 @@ namespace MilGroundOps
 {
     class Commander : Leader
     {
+        public M9Pistol pistola = new M9Pistol();
 
-        //Inherited - Not changed
-            // Name - Randomly Assigned
-            // Roster # - Randomly Assigned
-            // Weapon - M9
-        
-        //Inherited - Changed
-            // Rank - CPT
+        public Commander()
+        {
+            this.personName = "Jonathan Knowsbetter";
+            this.rosterNumber = "JK0987";
+            this.saying = "Today we liberate the peoples of Atropi";
+            this.rank = "CPT";
+        }
 
+        public override void FireWeapon()
+        {
+            pistola.FireWeapon();
+            pistola.Reload();
+        }
 
     }
 }

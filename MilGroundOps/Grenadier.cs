@@ -8,6 +8,7 @@ namespace MilGroundOps
 {
     class Grenadier : Soldier
     {
+        M203 launcher = new M203();
 
         public Grenadier()
         {
@@ -17,7 +18,11 @@ namespace MilGroundOps
             this.rank = "SPC";
         }
 
-        // Weapon - M203
+        public override void FireWeapon()
+        {
+            launcher.FireWeapon();
+            launcher.Reload();
+        }
 
     }
 }
