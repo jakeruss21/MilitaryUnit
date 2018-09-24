@@ -9,13 +9,35 @@ namespace MilGroundOps
     class M240B : DirectFire
     {
 
-        //Inherited - changed
-            // Ammunition Type - 7.62 mm
-            // Reload - 15 seconds / 200 rounds
-            // Mission load - 1000
-            // Rate of Fire - 950 rpm
-            // Range - 3700 meters
-            // Magazine - 200
+        override public void AmmunitionType()  // Ammunition Type
+        {
+            Console.WriteLine("7.62mm NATO round");
+        }
+
+        override public void Reload()    // Reload
+        {
+            Console.WriteLine("15 second reload time per magazine");
+        }
+
+        override public void MissionLoadout() // Mission loadout
+        {
+            Console.WriteLine("Basic mission loadout of 1000 rounds");
+        }
+
+        override public void FireRPM()   // Rate of Fire
+        {
+            Console.WriteLine("Firing rate of 950 rounds per minute");
+        }
+
+        override public void RangeofWeapon() // Range
+        {
+            Console.WriteLine("3700 meter effective range");
+        }
+
+        override public void MagazineSize()  // Magazine
+        {
+            Console.WriteLine("There are 200 rounds in each magazine");
+        }
 
     }
 }
