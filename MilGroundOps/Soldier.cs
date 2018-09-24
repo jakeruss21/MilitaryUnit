@@ -9,14 +9,15 @@ namespace MilGroundOps
     class Soldier : Personnel
     {
 
-        // Inherited - Not Changed
-            // Name (Last, First)
-            // Roster # (Two Char, 4 digit int)
+        public Soldier()
+        {
+            this.personName = "Billy Forgotmycac";
+            this.rosterNumber = "BF9435";
+            this.saying = "For Atropia!";
+            this.rank = "PVT";
+        }
 
-        // Inherited - Changed
-            // Weapon - M4
-            // Speech - For Atropia!
-            // Rank - Specialist
+        // Weapon - M4
 
     }
 }

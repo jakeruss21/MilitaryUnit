@@ -9,14 +9,15 @@ namespace MilGroundOps
     class Rifleman : Soldier
     {
 
-        // Inherited - Not Changed
-            // Name (Last, First)
-            // Roster # (Two Char, 4 digit int)
-            // Speech - For Atropia!
-            // Weapon - M4/AT4 - randomly assign (1/6 chance of carrying AT4)
+        public Rifleman()
+        {
+            this.personName = "Billy Forgotmycac";
+            this.rosterNumber = "BF9435";
+            this.saying = "For Atropia!";
+            this.rank = "PVT";
+        }
 
-        // Inherited - Changed
-            // Rank - Private
+        // Weapon - M4/AT4 - randomly assign (1/6 chance of carrying AT4)
 
     }
 }

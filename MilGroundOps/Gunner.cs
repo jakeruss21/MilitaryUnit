@@ -9,14 +9,15 @@ namespace MilGroundOps
     class Gunner : Soldier
     {
 
-        // Inherited - Not Changed
-            // Name (Last, First)
-            // Roster # (Two Char, 4 digit int)
-            // Rank - Private
-        
-        // Inherited - Changed
-            // Weapon - None
-            // Speech - Pew pew die die!
+        public Gunner()
+        {
+            this.personName = "Yakko Warner";
+            this.rosterNumber = "YW4356";
+            this.saying = "Pew pew die suckers!";
+            this.rank = "PVT";
+        }
+
+        // Weapon - None
 
     }
 }

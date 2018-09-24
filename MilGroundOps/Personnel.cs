@@ -8,25 +8,17 @@ namespace MilGroundOps
 {
     class Personnel
     {
+        public string personName;
+        public string rosterNumber;
+        public string saying;
+        public string rank;
 
-        virtual public void NameofPerson()  // Name (Last, First)
+        public Personnel()
         {
-            Console.WriteLine("Doe, John");
-        }
-
-        virtual public void RosterNumber()  // Roster # (Two Char, 4 digit int)
-        {
-            Console.WriteLine("JD1234");
-        }
-
-        virtual public void PersonSaying()  // Speech
-        {
-            Console.WriteLine("For Atropia!");
-        }
-
-        virtual public void PersonRank()    // Rank
-        {
-            Console.WriteLine("Captain");
+            this.personName = "John Doe";
+            this.rosterNumber = "JD1234";
+            this.saying = "For Atropia";
+            this.rank = "PVT";
         }
 
         virtual public void PersonWeapon()  // Weapon

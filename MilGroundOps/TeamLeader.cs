@@ -9,13 +9,15 @@ namespace MilGroundOps
     class TeamLeader : Leader
     {
 
-        //Inherited - Not changed
-            // Name - Randomly Assigned
-            // Roster # - Randomly Assigned
-            // Weapon - M9
+        public TeamLeader()
+        {
+            this.personName = "Old Sarge";
+            this.rosterNumber = "OS6348";
+            this.saying = "Shut your face-hole and do it anyways.";
+            this.rank = "SGT";
+        }
 
-        //Inherited - Changed
-            // Rank - SGT
+        // Weapon - M4
 
     }
 }

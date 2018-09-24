@@ -8,17 +8,16 @@ namespace MilGroundOps
 {
     class PlatoonLeader : Leader
     {
+
         public PlatoonLeader()
         {
-
+            this.personName = "William Igotmecollege";
+            this.rosterNumber = "WI5834";
+            this.saying = "I'm pretty sure we were supposed to go the otherway.";
+            this.rank = "1LT";
         }
-        //Inherited - Not changed
-            // Name - Randomly Assigned
-            // Roster # - Randomly Assigned
-            // Weapon - M9
 
-        //Inherited - Changed
-            // Rank - 1LT
+        // Weapon - M9
 
     }
 }

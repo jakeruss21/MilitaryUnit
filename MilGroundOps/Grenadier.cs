@@ -9,14 +9,15 @@ namespace MilGroundOps
     class Grenadier : Soldier
     {
 
-        // Inherited - Not Changed
-            // Name (Last, First)
-            // Roster # (Two Char, 4 digit int)
-            // Rank - Specialist
-        
-        // Inherited - Changed
-            // Weapon - M203
-            // Speech - Boom baby!
+        public Grenadier()
+        {
+            this.personName = "Luis Boomsalot";
+            this.rosterNumber = "LB5655";
+            this.saying = "Boom baby!";
+            this.rank = "SPC";
+        }
+
+        // Weapon - M203
 
     }
 }

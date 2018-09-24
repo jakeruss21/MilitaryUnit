@@ -8,7 +8,7 @@ namespace MilGroundOps
 {
     class M240B : DirectFire
     {
-        public void FireWeapon()
+        override public void FireWeapon()
         {
             Console.WriteLine("Pew pew pew die die die!");
         }

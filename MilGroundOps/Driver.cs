@@ -9,14 +9,15 @@ namespace MilGroundOps
     class Driver : Soldier
     {
 
-        // Inherited - Not Changed
-            // Name (Last, First)
-            // Roster # (Two Char, 4 digit int)
-            // Weapon - M4
+        public Driver()
+        {
+            this.personName = "Rusty Nails";
+            this.rosterNumber = "RN0666";
+            this.saying = "I have a need, a need for speed!";
+            this.rank = "SPC";
+        }
 
-        // Inherited - Changed
-            // Speech - I have a need, a need for speed!
-            // Rank - Specialist
+        // Weapon - M4
 
     }
 }
